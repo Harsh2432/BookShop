@@ -2,7 +2,7 @@
   "name": "proshop",
   "version": "1.0.0",
   "description": "An electronic products selling website created using MERN (MongoDB, ExpressJS, ReactJS and NodeJS)",
-  "main": "server.js",
+  "main": "backend/server.js",
   "type": "module",
   "scripts": {
     "start": "node backend/server",
@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install && cd frontend && npm install && npm run build"
   },
   "author": "Harsh Jadhav",
   "license": "MIT",
