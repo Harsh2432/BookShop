@@ -88,6 +88,12 @@ const ProductScreen = ({ history, match }) => {
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>
+                <ListGroup.Item>
+                  Author: {product.author}
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Genre: {product.genre}
+                </ListGroup.Item>
               </ListGroup>
             </Col>
             <Col md={3}>
